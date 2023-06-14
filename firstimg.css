@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@import url(index.html);
+
+@media screen and (max-width: 768px) 
+{}
+   
+ 
+    
+    
+    
+  
+  
+  /* 768px 이상일 때 */
+  @media screen and (min-width: 650px) {
+  
+    .bn { margin-right: 20px;
+          margin-left: 20px;}
+
+      
+   
+  }
+
+  
+
+.fir {
+    display: flex;
+  
+    
+   
+    
+  }
+  
+ .gr1{width: 90%;
+     height: auto;
+     margin-left: 6%;
+     margin-right: 6%;
+    
+
+    
+}
+
+  
+
+.pg{width: 90%;
+    height: auto;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.pg2{width: 90%;
+  height: auto;
+  margin-left: 6%;
+  margin-top: 8%;
+}
+
+.pg3{width: 90%;
+  height: auto;
+  margin-left: 6%;
+  margin-top: 8%;
+}
+
+.image-container {
+  height: 1000px; /* 이미지를 보이게 하기 위한 height 값을 지정합니다 */
+}
+
+.pg, .pg2 {
+  opacity: 0; /* 이미지를 처음에 투명하게 만듭니다 */
+  transition: opacity 1.5s ease-in-out; /* 이미지가 나타나는 트랜지션 효과를 추가합니다 */
+}
+
+a{display: block;}

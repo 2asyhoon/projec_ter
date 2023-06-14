@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>동아리 소개</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    
+  @media screen and (max-width: 768px) {
+   
+   .ti {
+     margin-right: 10px;
+     margin-left: 10px;
+   }
+   
+ }
+
+
+ /* 768px 이상일 때 */
+
+ @media screen and (min-width: 1760px) {
+
+   .ku{margin-right: 700px;}
+
+ }
+
+ @media screen and (min-width: 1840px) {
+   .mun{
+     margin-right: 20px;
+     margin-left: 1100px;
+   }
+
+ 
+
+ }
+
+header {
+   background-color: #ffffff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 9%;
+   z-index: 11; 
+  
+ }
+ .ti{ width: 7%;
+       height: auto;
+   margin: 50px; 
+   position: absolute;
+   margin-top: -0.55%;
+   z-index: 20;}
+
+
+ nav {
+   margin: 20px;
+   }
+ 
+ nav ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   
+   
+ }
+ 
+ nav ul li {
+   margin: 0 25px;
+ }
+
+
+ nav ul li a {
+   color: #000000;
+   font-size: 14px; 
+   text-decoration: none;
+   font-weight: bold;
+   transition: 0.3s;
+  }
+
+  nav ul li a:hover{color: #00bb09;}
+
+ .mun {
+   background-color: #027206;
+   border: none;
+   color: rgb(255, 255, 255);
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin-right: 50px;
+   cursor: pointer;
+   border-radius: 30px;
+   opacity: 0.6;
+   transition: 0.3s;
+
+   }
+
+   .mun:hover{opacity: 1;}
+
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background-image: url();
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+   
+    <header>
+        <a href="index.html"><img class="ti" src="imge/title.png"></a>
+           <nav>
+             <ul>
+            
+               <li><a href="jasehi.html">전시회</a></li>
+               <li><a href="https://www.instagram.com/projec_ter/">작업물</a></li>
+             </ul>
+           </nav>
+           <a href="https://www.instagram.com/2z._hoon/">
+            <button class="mun" href="#">문의</button></a>
+         </header>
+   
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="imge/4P1.png"></div>
+      <div class="swiper-slide"><img src="imge/2p2.png"></div>
+      <div class="swiper-slide"><img src="imge/2p3.png"></div>
+      <div class="swiper-slide"><img src="imge/2p4.5.png"></div>
+      <div class="swiper-slide"><img src="imge/2p5.png"></div>
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

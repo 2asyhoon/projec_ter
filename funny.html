@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>전시회 정보</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+ 
+ 
+ <style>
+ 
+  @media screen and (max-width: 768px) {
+   
+    .ti {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    
+  }
+ 
+ 
+  /* 768px 이상일 때 */
+ 
+  @media screen and (min-width: 1760px) {
+ 
+    .ku{margin-right: 700px;}
+ 
+  }
+ 
+  @media screen and (min-width: 1840px) {
+    .mun{
+      margin-right: 20px;
+      margin-left: 1100px;
+    }
+ 
+  
+ 
+  }
+ 
+ header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 11; 
+   
+  }
+  .ti{ width: 7%;
+        height: auto;
+    margin: 50px; 
+    position: absolute;
+    margin-top: -0.65%;
+    z-index: 20;}
+
+
+  nav {
+    margin: 20px;
+    }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    
+  }
+  
+  nav ul li {
+    margin: 0 25px;
+  }
+ 
+ 
+  nav ul li a {
+    color: #000000;
+    font-size: 14px; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+   }
+ 
+   nav ul li a:hover{color: #00bb09;}
+ 
+  .mun {
+    background-color: #027206;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    opacity: 0.6;
+    transition: 0.3s;
+ 
+    }
+ 
+    .mun:hover{opacity: 1;}
+ 
+ 
+     
+ 
+     body {
+       margin: 0;
+       padding: 0;
+       
+       
+     }
+ 
+     .swiper {
+       width: 100%;
+       padding-top: 50px;
+       padding-bottom: 50px;
+     }
+ 
+     .swiper-slide {
+       background-position: center;
+       background-size: cover;
+       width: 30%;
+       height: 30%;
+     }
+ 
+     .swiper-slide img {
+       display: block;
+       width: 100%;
+     }
+ 
+     #htb{
+ 
+          width: 70%;
+          height: auto;
+          margin-top: 7%;
+          margin-left: 22%;
+          margin-right: 22%;
+         
+     }
+ 
+     .lt{display: flex;
+			justify-content: center;
+			align-items: center;
+         width: 100%;
+         height: 25%;
+
+    }
+
+     
+ 
+     
+   </style>
+ 
+   
+ </head>
+ 
+ <body>
+ 
+     <header>
+      <a href="index.html"><img class="ti" src="imge/title.png"></a>
+         <nav>
+           <ul>
+          
+             <li><a href="dong.html">소개</a></li>
+             <li><a href="https://www.instagram.com/projec_ter/">작업물</a></li>
+           </ul>
+         </nav>
+         <a href="https://www.instagram.com/2z._hoon/">
+          <button class="mun" href="#">문의</button></a>
+       </header>
+ 
+
+       
+   <div id="htb">
+    <img src="imge/3P1.png" data-src="imge/3P1.png">
+   </div>
+   
+   
+   
+   <!-- Swiper -->
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       <div class="swiper-slide">
+         <img src="imge/jang1.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang2.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang3.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang4.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang5.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang6.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang7.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang8.jpg" />
+       </div>
+       <div class="swiper-slide">
+         <img src="imge/jang9.jpg" />
+       </div>
+     </div>
+     <div class="swiper-pagination"></div>
+   </div>
+   
+   <div class="lt">
+     <img src="imge/3p3.png">
+   </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>
